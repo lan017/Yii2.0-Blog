@@ -32,6 +32,11 @@ class SidebarWidget extends Menu
                     ['label'=>'更新文章','url'=>['cats/update'],'visible'=>false],
                 ]
                 ],
+                ['label'=>'新分类管理','url'=>['category/index'],'items'=>[
+                    ['label'=>'创建文章','url'=>['cats/create'],'visible'=>false],
+                    ['label'=>'更新文章','url'=>['cats/update'],'visible'=>false],
+                ]
+                ],
                 ['label'=>'标签管理','url'=>['tag/index']],
             ]
             ],

@@ -6,6 +6,7 @@ use common\models\PostExtendsModel;
 use Yii;
 use common\models\CatsModel;
 use frontend\models\PostForm;
+use yii\helpers\Markdown;
 
 /**
  * 基础控制器
@@ -68,6 +69,9 @@ Class PostController extends BaseController
     {
         $model = new PostForm();
         $data = $model->getViewById($id);
+
+
+        $data['content'] = Markdown::process($data['content'],'gfm');
 
         //文章统计
         $model = new PostExtendsModel();

@@ -190,7 +190,7 @@ AppAsset::register($this);
     <div class="contentpanel">
         <?= Breadcrumbs::widget([
             'homeLink'=>[
-                'label' => '<i class="fa fa-home mr5"></i> '.Yii::t('yii', 'Home'),
+                'label' => '<i class="fa fa-home mr5"></i> '.Yii::t('yii', '首页'),
                 'url' => '/',
                 'encode' => false,
             ],
